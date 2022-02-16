@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Programming Lover Calculator</string>
     <string-array name  = "langs">
+        <item>Choose Lang.</item>
         <item>C</item>
         <item>C++</item>
         <item>C#</item>

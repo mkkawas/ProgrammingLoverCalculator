@@ -32,7 +32,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
         String text = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        if (text.equals("Choose Lang.")){
+            //do nothing
+        }else{
+            Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //for nothing
 
 
-        
+
 
 
     }
