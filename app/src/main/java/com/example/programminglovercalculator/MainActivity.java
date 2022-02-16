@@ -4,17 +4,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
-
+import java.util.ArrayList;
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Spinner lang;
     ImageView img = null;
+    ArrayList<String> list;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +44,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
-
+        int n;
+        Random rand = new Random();
+        TextView name = findViewById(R.id.name);
+        EditText number = findViewById(R.id.number);
+        list = new ArrayList<>();
         String text = parent.getItemAtPosition(position).toString();
-        String t = System.getenv(text);
         if (text.equals("Choose Lang.")){
             //do nothing
+            if (img != null) {
+                img.setVisibility(View.GONE);
+            }
         }else{
             Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
 
@@ -53,6 +66,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
+
 
             }else if(text.equals("C")){
                 if (img != null) {
@@ -62,8 +79,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
-                }
-            else if(text.equals("C++")){
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
+
+
+            }else if(text.equals("C++")){
                 if (img != null) {
                     img.setVisibility(View.GONE);
                 }
@@ -71,6 +92,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
             }else if(text.equals("C#")){
 
                 if (img != null) {
@@ -80,24 +104,36 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
 
-            }else if(text.equals("HTML")){
+
+            }else if(text.equals("Python")){
                 if (img != null) {
                     img.setVisibility(View.GONE);
                 }
-                img = findViewById(R.id.html);
+                img = findViewById(R.id.python);
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
 
-            }else if(text.equals("CSS")){
+
+            }else if(text.equals("PHP")){
                 if (img != null) {
                     img.setVisibility(View.GONE);
                 }
-                img = findViewById(R.id.css);
+                img = findViewById(R.id.php);
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
+
 
             }else if(text.equals("JS")){
                 if (img != null) {
@@ -107,6 +143,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setAlpha(0f);
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
+                n = rand.nextInt(100);
+                number.setText(n+"");
+                list.add(name +"\t"+text+"\t"+n);
             }
             }
 
