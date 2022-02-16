@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +28,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         lang.setOnItemSelectedListener(this);
 
+
+
+
     }
 
     public void lover(View view){
+      /*  ImageView java = findViewById(R.id.java);
+        ImageView c = findViewById(R.id.c);
+        ImageView c_plus = findViewById(R.id.cplus);
+        ImageView c_sharp = findViewById(R.id.csharp);
+        ImageView html = findViewById(R.id.html);
+        ImageView js = findViewById(R.id.js);
+        ImageView css = findViewById(R.id.css);*/
+
+
+
+
 
     }
     @Override
