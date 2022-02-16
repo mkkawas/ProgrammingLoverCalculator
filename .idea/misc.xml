@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/drawable/boarder.xml" value="0.134375" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/layout/back.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/layout/backk.xml" value="0.14628623188405798" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/layout/spinner_text_layout.xml" value="0.1" />
         <entry key="..\:/Users/HES/AndroidStudioProjects/ProgrammingLoverCalculator/app/src/main/res/layout/spinnertext.xml" value="0.1" />
       </map>

@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgrammingLoverCalculator">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/back" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

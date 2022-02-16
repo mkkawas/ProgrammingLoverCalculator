@@ -1,5 +1,7 @@
 package com.example.programminglovercalculator;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,9 +20,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     Spinner lang;
     ImageView img = null;
-    ArrayList<String> list;
-
-
+    String final_text = "Name\t\t\t\t\t\t\t\tLanguage\t\t\t\t\t\t\t\tScore\n";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,15 +48,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Random rand = new Random();
         TextView name = findViewById(R.id.name);
         EditText number = findViewById(R.id.number);
-        list = new ArrayList<>();
+        TextView fin = findViewById(R.id.f);
+
+        fin.setText(final_text);
         String text = parent.getItemAtPosition(position).toString();
         if (text.equals("Choose Lang.")){
-            //do nothing
             if (img != null) {
                 img.setVisibility(View.GONE);
             }
         }else{
-            Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
 
             if (text.equals("Java")){
                 if (img != null) {
@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
+
 
 
             }else if(text.equals("C")){
@@ -81,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
 
 
             }else if(text.equals("C++")){
@@ -94,7 +97,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
+
             }else if(text.equals("C#")){
 
                 if (img != null) {
@@ -106,7 +111,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
+
 
 
             }else if(text.equals("Python")){
@@ -119,7 +126,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
 
 
             }else if(text.equals("PHP")){
@@ -132,7 +140,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
 
 
             }else if(text.equals("JS")){
@@ -145,7 +154,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
                 number.setText(n+"");
-                list.add(name +"\t"+text+"\t"+n);
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                fin.setText(final_text);
             }
             }
 
