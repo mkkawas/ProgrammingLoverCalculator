@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
 
 
@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
 
 
@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
 
             }else if(text.equals("C#")){
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
 
 
@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
 
 
@@ -139,8 +139,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
 
 
@@ -153,8 +153,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 img.setVisibility(View.VISIBLE);
                 img.animate().alpha(1f).setDuration(2000).setListener(null);
                 n = rand.nextInt(100);
-                number.setText(n+"");
-                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"\n";
+                number.setText(n+"%");
+                final_text += name.getText().toString() +"\t\t\t\t\t\t\t\t"+text+"\t\t\t\t\t\t\t\t"+number.getText().toString()+"%\n";
                 fin.setText(final_text);
             }
             }
