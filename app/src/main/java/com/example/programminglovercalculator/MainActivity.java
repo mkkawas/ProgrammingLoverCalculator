@@ -12,14 +12,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-
+    Spinner lang;
+    ImageView img = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner lang = findViewById(R.id.spinner);
-
+        lang = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.langs, R.layout.spinnertext);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -33,29 +33,81 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-    public void lover(View view){
-      /*  ImageView java = findViewById(R.id.java);
-        ImageView c = findViewById(R.id.c);
-        ImageView c_plus = findViewById(R.id.cplus);
-        ImageView c_sharp = findViewById(R.id.csharp);
-        ImageView html = findViewById(R.id.html);
-        ImageView js = findViewById(R.id.js);
-        ImageView css = findViewById(R.id.css);*/
 
-
-
-
-
-    }
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
+
         String text = parent.getItemAtPosition(position).toString();
+        String t = System.getenv(text);
         if (text.equals("Choose Lang.")){
             //do nothing
         }else{
-
             Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-        }
+
+            if (text.equals("Java")){
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img= findViewById(R.id.java);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+
+            }else if(text.equals("C")){
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img = findViewById(R.id.c);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+                }
+            else if(text.equals("C++")){
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img = findViewById(R.id.cplus);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+            }else if(text.equals("C#")){
+
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img = findViewById(R.id.csharp);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+
+            }else if(text.equals("HTML")){
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img = findViewById(R.id.html);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+
+            }else if(text.equals("CSS")){
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img = findViewById(R.id.css);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+
+            }else if(text.equals("JS")){
+                if (img != null) {
+                    img.setVisibility(View.GONE);
+                }
+                img = findViewById(R.id.js);
+                img.setAlpha(0f);
+                img.setVisibility(View.VISIBLE);
+                img.animate().alpha(1f).setDuration(2000).setListener(null);
+            }
+            }
 
 
     }
