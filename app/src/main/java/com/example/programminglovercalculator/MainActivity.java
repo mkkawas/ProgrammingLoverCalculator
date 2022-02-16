@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 
 
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Spinner lang;
