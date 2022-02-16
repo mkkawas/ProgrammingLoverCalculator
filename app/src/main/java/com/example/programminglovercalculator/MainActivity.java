@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if (text.equals("Choose Lang.")){
             //do nothing
         }else{
-            ImageView
+
             Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
         }
 
