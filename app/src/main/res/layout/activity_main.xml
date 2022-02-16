@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ins"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -74,7 +75,7 @@
         app:layout_constraintVertical_bias="0.04000002" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/csharp"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:visibility="invisible"
@@ -86,7 +87,7 @@
         app:srcCompat="@drawable/c_sharp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/c"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:visibility="invisible"
@@ -99,7 +100,7 @@
         app:srcCompat="@drawable/c_logo" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/cplus"
         android:layout_width="200dp"
         android:layout_height="200dp"
 
@@ -113,9 +114,10 @@
         app:srcCompat="@drawable/c___logo" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/java"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -123,5 +125,30 @@
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.2"
         app:srcCompat="@drawable/java_logo" />
+
+    <ImageView
+        android:id="@+id/html"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/html_logo" />
+
+    <ImageView
+        android:id="@+id/js"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/javascript_shield" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
